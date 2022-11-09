@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAID 1</title>
+    <link rel="stylesheet" href="C:\Users\HP\Desktop\web development\project 1\style.css">
+    <script>
+        function printPage() {
+          window.print();
+    }
+    </script>
+    </head>
+<body>
+    <h1>RAID LEVEL 1: RAID Level 1 | RAID 1: Mirroring & Duplexing</h1>
+    <p>For Highest performance, the controller must be able to perform two concurrent separate Reads per mirrored pair or two duplicate Writes per mirrored pair.</p>
+    <p>RAID Level 1 requires a minimum of 2 drives to implement</p>
+    <img class ="img" src="C:\Users\HP\Desktop\web development\project 1\storage_raid_01.png" alt="RAID">
+    <input class ="img"type="button" value="Print this page" onclick="printPage()" />
+    <h3>Also known as disk mirroring, this configuration consists of at least two drives that duplicate the storage of data. There is no striping. Read performance is improved, since either disk can be read at the same time. Write performance is the same as for single disk storage.</h3>
+    <h2>Characteristics and Advantages</h2>
+        <em><ul>
+            <li>One Write or two Reads possible per mirrored pair</li>
+            <li>Twice the Read transaction rate of single disks, same Write transaction rate as single disks</li>
+            <li>100% redundancy of data means no rebuild is necessary in case of a disk failure, just a copy to the replacement disk </li>
+            <li>Transfer rate per block is equal to that of a single disk</li>
+            <li>Under certain circumstances, RAID level 1 can sustain multiple simultaneous drive failures</li>
+            <li>Simplest RAID storage subsystem design</li>
+        </ul></em>
+    <h2>Disadvantages</h2>
+    <em><ul>
+        <li>Highest disk overhead of all RAID types (100%) - inefficient</li>
+        <li>Typically the RAID function is done by system software, loading the CPU/Server and possibly degrading throughput at high activity levels. Hardware implementation is strongly recommended</li>
+        <li>May not support hot swap of failed disk when implemented in "software"</li>
+    </ul></em>
+    <h2>Recommended Applications</h2>
+    <em><ul>
+        <li>Accounting</li>
+        <li>Payroll</li>
+        <li>Financial</li>
+        <li>Any application requiring very high availability</li>
+    </ul></em>
+</body>
+</html>

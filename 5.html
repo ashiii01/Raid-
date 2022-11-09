@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAID 5</title>
+    <link rel="stylesheet" href="C:\Users\HP\Desktop\web development\project 1\style.css">
+    <script>
+        function printPage() {
+          window.print();
+    }
+    </script>
+    </head>
+<body>
+    <h1>RAID LEVEL 5: JetStor RAID Level 5 Storage Systems for Sale</h1>
+    <p>Each entire data block is written on a data disk; parity for blocks in the same rank is generated on Writes, recorded in a distributed location and checked on Reads.
+
+        RAID Level 5 storage systems require a minimum of 3 drives to implement.</p>
+    <img class ="img" src="C:\Users\HP\Desktop\web development\project 1\storage_raid_05.png" alt="RAID 5">
+    <input class ="img"type="button" value="Print this page" onclick="printPage()" />
+    <h3>This level is based on parity block-level striping. The parity information is striped across each drive, enabling the array to function, even if one drive were to fail. The array's architecture enables read and write operations to span multiple drives. This results in performance better than that of a single drive, but not as high as a RAID 0 array. RAID 5 requires at least three disks, but it is often recommended to use at least five disks for performance reasons.
+
+        RAID 5 arrays are generally considered to be a poor choice for use on write-intensive systems because of the performance impact associated with writing parity data. When a disk fails, it can take a long time to rebuild a RAID 5 array.</h3>
+    <h2>Characteristics and Advantages</h2>
+        <em><ul>
+            <li>Highest Read data transaction rate</li>
+            <li>Medium Write data transaction rate</li>
+            <li>Low ratio of ECC (Parity) disks to data disks means high efficiency</li>
+            <li>Good aggregate transfer rate</li>
+        </ul></em>
+    <h2>Disadvantages</h2>
+    <em><ul>
+        <li>Disk failure has a medium impact on throughput</li>
+        <li>Most complex controller design</li>
+        <li>Difficult to rebuild in the event of a disk failure (as compared to RAID level 1)</li>
+        <li>Individual block data transfer rate same as single disk</li>
+    </ul></em>
+    <h2>Recommended Applications</h2>
+    <em><ul>
+        <li>File and Application servers</li>
+        <li>Database servers</li>
+        <li>Web, E-mail, and News servers</li>
+        <li>Intranet servers</li>
+        <li>Most versatile RAID level</li>
+    </ul></em>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAID 0</title>
+    <link rel="stylesheet" href="C:\Users\HP\Desktop\web development\project 1\style.css">
+    <script>
+        function printPage() {
+          window.print();
+    }
+    </script>
+    </head>
+<body>
+    <h1>RAID 0: RAID Level 0 Storage | Striped Disk Array </h1>
+    <p>RAID Level 0 requires a minimum of 2 drives to implement. Learn about RAID 0 advantages and disadvantages below.</p>
+    <img class ="img"src="C:\Users\HP\Desktop\web development\project 1\storage_raid_00.png" alt="RAID0">
+    <input class ="img"type="button" value="Print this page" onclick="printPage()" />
+    <h3>This configuration has striping but no redundancy of data. It offers the best performance,but it does not provide fault tolerance.</h3>
+    <h2>Characteristics and Advantages</h2>
+        <em><ul >
+            <li>RAID 0 implements a striped disk array,&nbsp;the data is broken down into blocks and each block is written to a separate disk drive</li>
+            <li>I/O performance is greatly improved by spreading the I/O load across many channels and drives</li>
+            <li>Best performance is achieved when data is striped across multiple controllers with only one drive per controller</li>
+            <li>No parity calculation overhead is involved</li>
+            <li>Very simple design</li>
+            <li>Easy to implement</li>
+        </ul></em>
+    <h2>Disadvantages</h2>
+    <em><ul>
+        <li>Striped RAID is not a "True" RAID because it is NOT fault-tolerant</li>
+        <li>The failure of just one drive will result in all data in an array being lost</li>
+        <li>Should never be used in mission critical environments</li>
+        
+    </ul></em>
+    <h2>Recommended Applications</h2>
+    <em><ul>
+        <li>Video Production and Editing</li>
+        <li>Image Editing </li>
+        <li>Pre-Press Applications</li>
+        <li>Any application requiring high bandwidth</li>
+    </ul></em>
+
+        
+        
+        
+        
+        
+        
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAID 6</title>
+    <link rel="stylesheet" href="C:\Users\HP\Desktop\web development\project 1\style.css">
+    <script>
+        function printPage() {
+          window.print();
+    }
+    </script>
+    </head>
+<body>
+    <h1>RAID LEVEL 6: RAID Level 6 Options | RAID 6 Storage Devices | ACNC</h1>
+    <p>Two independent parity computations must be used in order to provide protection against double disk failure. Two different algorithms are employed to achieve this purpose.
+
+      RAID Level 6 requires a minimum of 4 drives to implement</p>
+    <img class ="img" src="C:\Users\HP\Desktop\web development\project 1\storage_raid_06.png" alt="RAID 6">
+    <input class ="img"type="button" value="Print this page" onclick="printPage()" />
+    <h3>This technique is similar to RAID 5, but it includes a second parity scheme distributed across the drives in the array. The use of additional parity enables the array to continue functioning, even if two disks fail simultaneously. However, this extra protection comes at a cost. RAID 6 arrays often have slower write performance than RAID 5 arrays.</h3>
+    <h2>Characteristics and Advantages</h2>
+        <em><ul>
+            <li>RAID 6 is essentially an extension of RAID level 5 which allows for additional fault tolerance by using a second independent distributed parity scheme (dual parity)</li>
+            <li>Data is striped on a block level across a set of drives, just like in RAID 5, and a second set of parity is calculated and written across all the drives; RAID 6 provides for an extremely high data fault tolerance and can sustain multiple simultaneous drive failures</li>
+            <li>RAID 6 protects against multiple bad block failures while non-degraded</li>
+            <li>RAID 6 protects against a single bad block failure while operating in a degraded mode</li>
+            <li>RAID 6 storage is the perfect solution for mission critical applications</li>
+        </ul></em>
+  <h2>Disadvantages</h2>
+    <em><ul>
+      <li>More complex controller design</li>
+      <li>Controller overhead to compute parity addresses is extremely high</li>
+      <li>Write performance can be brought on par with RAID Level 5 by using a custom ASIC for computing Reed-Solomon parity </li>
+      <li>Requires N+2 drives to implement because of dual parity scheme</li>
+    </ul></em>
+  <h2>Recommended Applications</h2>
+    <em><ul>
+      <li>File and Application servers</li>
+      <li>Database servers</li>
+      <li>Web and E-mail servers</li>
+      <li>Intranet servers</li>
+      <li>Excellent fault-tolerance with the lowest overhead</li>
+    </ul></em>
+</body>
+</html>

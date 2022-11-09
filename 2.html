@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAID 2</title>
+    <link rel="stylesheet" href="C:\Users\HP\Desktop\web development\project 1\style.css">
+    <script>
+        function printPage() {
+          window.print();
+    }
+    </script>
+    </head>
+<body>
+    <h1>RAID LEVEL 2: RAID Level 2 | JetStor RAID 2 Storage Devices</h1>
+    <p>Each bit of data word is written to a data disk drive (4 in this example: 0 to 3). Each data word has its Hamming Code ECC word recorded on the ECC disks. On Read, the ECC code verifies correct data or corrects single disk errors.</p>
+    <img class ="img" src="C:\Users\HP\Desktop\web development\project 1\storage_raid_02.png" alt="RAID 2">
+    <input class ="img"type="button" value="Print this page" onclick="printPage()" />
+    <h3>This configuration uses striping across disks, with some disks storing error checking and correcting (ECC) information. RAID 2 also uses a dedicated Hamming code parity, a linear form of ECC. RAID 2 has no advantage over RAID 3 and is no longer used.</h3>
+    <h2>Characteristics and Advantages</h2>
+        <em><ul>
+            <li>"On the fly" data error correction</li>
+            <li>Extremely high data transfer rates possible</li>
+            <li>The higher the data transfer rate required, the better the ratio of data disks to ECC disks</li>
+            <li>Relatively simple controller design compared to RAID levels 3,4 & 5</li>
+        </ul></em>
+    <h2>Disadvantages</h2>
+    <em><ul>
+        <li>Very high ratio of ECC disks to data disks with smaller word sizes - inefficient</li>
+        <li>Entry level cost very high - requires very high transfer rate requirement to justify</li>
+        <li>Transaction rate is equal to that of a single disk at best (with spindle synchronization)</li>
+        <li>No commercial implementations exist / not commercially viable</li>
+    </ul></em>
+</body>
+</html>

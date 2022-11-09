@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAID 3</title>
+    <link rel="stylesheet" href="C:\Users\HP\Desktop\web development\project 1\style.css">
+    <script>
+        function printPage() {
+          window.print();
+    }
+    </script>
+    </head>
+<body>
+    <h1>RAID LEVEL 3: RAID Level 3 Storage | RAID 3 Advantages and Disadvantages</h1>
+    <p>The data block is subdivided ("striped") and written on the data disks. Stripe parity is generated on Writes, recorded on the parity disk and checked on Reads.
+
+        RAID Level 3 storage requires a minimum of 3 drives to implement</p>
+    <img class ="img" src="C:\Users\HP\Desktop\web development\project 1\storage_raid_03.png" alt="RAID 3">
+    <input class ="img"type="button" value="Print this page" onclick="printPage()" />
+    <h3>This technique uses striping and dedicates one drive to storing parity information. The embedded ECC information is used to detect errors. Data recovery is accomplished by calculating the exclusive information recorded on the other drives. Because an I/O operation addresses all the drives at the same time, RAID 3 cannot overlap I/O. For this reason, RAID 3 is best for single-user systems with long record applications.
+
+    </h3>
+    <h2>Characteristics and Advantages</h2>
+        <em><ul>
+            <li>Very high Read data transfer rate</li>
+            <li>Very high Write data transfer rate</li>
+            <li>Disk failure has an insignificant impact on throughput</li>
+            <li>Low ratio of ECC (Parity) disks to data disks means high efficiency</li>
+        </ul></em>
+    <h2>Disadvantages</h2>
+    <em><ul>
+        <li>Transaction rate equal to that of a single disk drive at best (if spindles are synchronized)</li>
+        <li>Controller design is fairly complex</li>
+        <li>Very difficult and resource intensive to do as a "software" RAID</li>
+    </ul></em>
+    <h2>Recommended Applications</h2>
+    <em><ul>
+        <li>Video Production and live streaming</li>
+        <li>Image Editing</li>
+        <li>Video Editing</li>
+        <li>Prepress Applications</li>
+        <li>Any application requiring high throughput</li>
+    </ul></em>
+</body>
+</html>

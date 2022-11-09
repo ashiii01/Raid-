@@ -1,0 +1,47 @@
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+  
+body {
+    margin-bottom: 60px;
+    font-family: "Montserrat";
+    background-color: lightseagreen;
+}
+#title{
+    background-color: #66BFBF;
+    color: #fff;
+    
+}
+  h1{
+    font-family: "Montserrat-Bold";
+    text-align: center;
+    color:#505050 ;
+    background-color:#66BFBF ;
+    font-size: 4rem; 
+}
+p{
+    color: black;
+    font-size: large;
+    text-align: center;
+}
+.col-form-label{
+    color: black;
+}
+.card-title{
+    color: black;
+
+}
+  
+  
+ 
+  
+.container {
+    width: auto;
+    max-width: 680px;
+    padding-top: 150px;
+    color:#505050 ;
+  }
+
+    

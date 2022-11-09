@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAID 10</title>
+    <link rel="stylesheet" href="C:\Users\HP\Desktop\web development\project 1\style.css">
+    <script>
+        function printPage() {
+          window.print();
+    }
+    </script>
+    </head>
+<body>
+    <h1>RAID LEVEL 10: RAID Level 10 | RAID 10 Advantages and Disadvantages</h1>
+    <p>RAID Level 10 requires a minimum of 4 drives to implement</p>
+    <img class ="img" src="C:\Users\HP\Desktop\web development\project 1\storage_raid_10.png" alt="RAID 10">
+    <input class ="img"type="button" value="Print this page" onclick="printPage()" />
+    <h3>Combining RAID 1 and RAID 0, this level is often referred to as RAID 10, which offers higher performance than RAID 1, but at a much higher cost. In RAID 1+0, the data is mirrored and the mirrors are striped.</h3>
+    <h2>Characteristics and Advantages</h2>
+        <em><ul>
+            <li>RAID 10 is implemented as a striped array whose segments are RAID 1 arrays</li>
+            <li>RAID 10 has the same fault tolerance as RAID level 1</li>
+            <li>RAID 10 has the same overhead for fault-tolerance as mirroring alone</li>
+            <li>High I/O rates are achieved by striping RAID 1 segments</li>
+            <li>Under certain circumstances, RAID 10 array can sustain multiple simultaneous drive failures</li>
+            <li>Excellent solution for sites that would have otherwise gone with RAID 1 but need some additional performance boost</li>
+        </ul></em>
+    <h2>Disadvantages</h2>
+    <em><ul>
+        <li>RAID level 10 can be very expensive / High overhead</li>
+        <li>All drives must move in parallel to proper track lowering sustained performance</li>
+        <li>Very limited scalability at a very high inherent cost</li>
+     </ul></em>
+     <h2>Recommended Applications</h2>
+    <em><ul>
+        <li>Database server requiring high performance and fault tolerance</li>
+    </ul></em>
+</body>
+</html>

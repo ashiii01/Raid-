@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAID 4</title>
+    <link rel="stylesheet" href="C:\Users\HP\Desktop\web development\project 1\style.css">
+    <script>
+        function printPage() {
+          window.print();
+    }
+    </script>
+    </head>
+<body>
+    <h1>RAID LEVEL 4: RAID Level 4 | JetStor RAID 4 Storage Systems</h1>
+    <p>Each entire block is written onto a data disk. Parity for same rank blocks is generated on Writes, recorded on the parity disk and checked on Reads.
+
+        RAID Level 4 storage systems require a minimum of 3 drives to implement.</p>
+    <img class ="img" src="C:\Users\HP\Desktop\web development\project 1\storage_raid_04.png" alt="RAID 4">
+    <input class ="img"type="button" value="Print this page" onclick="printPage()" />
+    <h3>This level uses large stripes, which means a user can read records from any single drive. Overlapped I/O can then be used for read operations. Because all write operations are required to update the parity drive, no I/O overlapping is possible.</h3>
+    <h2>Characteristics and Advantages</h2>
+        <em><ul>
+            <li>Very high Read data transaction rate</li>
+            <li>Low ratio of ECC (Parity) disks to data disks means high efficiency</li>
+            <li>High aggregate Read transfer rate</li>
+        </ul></em>
+    <h2>Disadvantages</h2>
+    <em><ul>
+        <li>Quite complex controller design</li>
+        <li>Worst Write transaction rate and Write aggregate transfer rate</li>
+        <li>Difficult and inefficient data rebuild in the event of disk failure</li>
+        <li>Block Read transfer rate equal to that of a single disk</li>
+    </ul></em>
+</body>
+</html>
